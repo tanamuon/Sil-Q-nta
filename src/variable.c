@@ -491,8 +491,9 @@ cptr keymap_act[KEYMAP_MODES][256];
 /*** Player information ***/
 
 /*
- * Pointer to the player tables (race, house, magic)
+ * Pointer to the player tables (sex, race, house, magic)
  */
+const player_sex *sp_ptr;
 const player_race *rp_ptr;
 player_house *hp_ptr;
 
@@ -817,7 +818,7 @@ u16b inscriptionsCount = 0;
 
 
 /* The bones file a restored player ghost should use to collect extra
- * flags, and a unique name.  This also indicates that there is
+ * flags, a sex, and a unique name.  This also indicates that there is
  * a ghost active.  -LM-
  */
 byte bones_selector;
