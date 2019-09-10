@@ -1354,7 +1354,7 @@ I:2:10d4:0
 A:10:6:0:14
 P:[+12,4d4]
 B:HIT:SHATTER:(+11,4d8)
-F:BASH_DOOR | TUNNEL_WALL | STONE | RAUKO | SMART
+F:BASH_DOOR | KILL_WALL | STONE | RAUKO | SMART
 F:RES_COLD | RES_FIRE
 F:RES_POIS | RES_CRIT
 D:It seems the very stone from which Angband is hewn
@@ -1713,7 +1713,7 @@ I:1:70d4:0
 A:5:5:0:14
 P:[+7,6d4]
 B:CRUSH:ACID:(+17,5d10)
-F:BASH_DOOR | TUNNEL_WALL | REGENERATE | MINDLESS | TERRITORIAL
+F:BASH_DOOR | KILL_WALL | REGENERATE | MINDLESS | TERRITORIAL
 F:RAND_25 | RAND_50 | FORCE_DEPTH
 D:'Far, far below the deepest delvings of the Dwarves, the world is
 D: gnawed by nameless things...' It is as a vast grub,
