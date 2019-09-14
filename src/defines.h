@@ -552,7 +552,8 @@
 #define	SNG_FREEDOM					4
 #define	SNG_SILENCE					5
 #define	SNG_STAUNCHING					6
-#define	SNG_WHETTING					7
+#define SNG_WHETTING					15
+#define	SNG_SHARPNESS				 	7
 #define	SNG_TREES					8
 #define	SNG_THRESHOLDS					9
 #define	SNG_STAYING					10

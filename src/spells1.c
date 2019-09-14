@@ -4972,6 +4972,22 @@ void change_song(int song)
 			}
 			break;
 		}
+		case SNG_SHARPNESS:
+		{
+			if (song_to_change == 1)
+			{
+				msg_print("You begin a whetting song about things that cut deep and true.");
+			}
+			else if (old_song == SNG_NOTHING)
+			{
+				msg_print("You add a minor theme about things that cut deep and true.");
+			}
+			else
+			{
+				msg_print("You change your minor theme to one about things that cut deep and true.");
+			}
+			break;
+		}
 		case SNG_DELVINGS:
 		{
 			if (song_to_change == 1)
@@ -5428,6 +5444,11 @@ void sing(void)
 			case SNG_WHETTING:
 			{
 				if ((p_ptr->song_duration % 3) == type - 1) cost += 1;
+				break;
+			}
+			case SNG_SHARPNESS:
+			{
+				cost += 1;
 				break;
 			}
 			case SNG_TREES:

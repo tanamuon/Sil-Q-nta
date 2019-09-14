@@ -1949,6 +1949,11 @@ int ability_bonus(int skilltype, int abilitynum)
 				bonus = skill / 4;
 				break;
 			}
+			case SNG_SHARPNESS:
+			{
+				bonus = skill * 2;
+				break;
+			}
 			case SNG_TREES:
 			{
 				bonus = skill / 5;
@@ -2575,6 +2580,7 @@ static void calc_bonuses(void)
 				case SNG_SILENCE:	song_noise += 0; break;
 				case SNG_STAUNCHING:	song_noise += 4; break;
 				case SNG_WHETTING:	song_noise += 8; break;
+				case SNG_SHARPNESS:	song_noise += 8; break;
 				case SNG_TREES:		song_noise += 4; break;
 				case SNG_THRESHOLDS:	song_noise += 4; break;
 				case SNG_STAYING:	song_noise += 8; break;
