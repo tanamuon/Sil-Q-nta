@@ -2352,6 +2352,12 @@ extern int prt_after_sharpness(const object_type *o_ptr, u32b *noticed_flag)
 		}
 	}
 
+	// Blunt weapons ignore a fraction of armor
+	if (o_ptr->tval == TV_HAFTED)
+	{
+		protection -= 50;
+	}
+
     if (protection < 0) protection = 0;
 	
 	return protection;
