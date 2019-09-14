@@ -3479,6 +3479,19 @@ static bool cave_gen(void)
 
 	p_ptr->force_forge = FALSE;
 
+	if (playerturn == 0)
+	{
+		if (p_ptr->skill_use[S_ARC] > p_ptr->skill_use[S_MEL])
+		{
+			place_item_randomly(TV_BOW, SV_SHORT_BOW, TRUE);
+			place_item_randomly(TV_ARROW, SV_NORMAL_ARROW, TRUE);
+		}
+		else
+		{
+			place_item_randomly(TV_SWORD, SV_CURVED_SWORD, TRUE);
+		}
+	}
+
 	return (TRUE);
 }
 
