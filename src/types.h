@@ -188,7 +188,7 @@ struct object_kind
 	byte abilitynum[4]; // Ability numbers for these
 
 	byte level;			/* Level */
-	byte extra;			/* Something */
+	byte extra;			// Whether throwing autoinscription has been offered (only checked with weapons that have TR3_THROWING)
 
 
 	byte d_attr;		/* Default object attribute */

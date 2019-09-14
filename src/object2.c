@@ -4877,6 +4877,30 @@ s16b inven_carry(object_type *o_ptr)
 	/* Window stuff */
 	p_ptr->window |= (PW_INVEN);
 
+	// Option for auto-inscribing throwing weapons
+	if (k_info[o_ptr->k_idx].flags3 & (TR3_THROWING) && !k_info[o_ptr->k_idx].extra)
+	{
+		char tmp_val[160];
+		char o_name2[80];
+		object_desc(o_name2, sizeof(o_name2), o_ptr, FALSE, 0);
+		if (o_ptr->sval == SV_DAGGER)
+		{
+			strnfmt(tmp_val, sizeof(tmp_val), "Inscribe all %s with '@t1'? (t->1 to throw) ", o_name2);
+			if (get_check(tmp_val)) add_autoinscription(o_ptr->k_idx, "@t1");
+		}
+		else if (o_ptr->sval == SV_SPEAR)
+		{
+			strnfmt(tmp_val, sizeof(tmp_val), "Inscribe all %s with '@t2'? (t->2 to throw) ", o_name2);
+			if (get_check(tmp_val)) add_autoinscription(o_ptr->k_idx, "@t2");
+		}
+		else if (o_ptr->sval == SV_THROWING_AXE)
+		{
+			strnfmt(tmp_val, sizeof(tmp_val), "Inscribe all %s with '@t3'? (t->3 to throw) ", o_name2);
+			if (get_check(tmp_val)) add_autoinscription(o_ptr->k_idx, "@t3");
+		}
+		k_info[o_ptr->k_idx].extra = 1;	
+	}
+
 	/* Return the slot */
 	return (i);
 }
