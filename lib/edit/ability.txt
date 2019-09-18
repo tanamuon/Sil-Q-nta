@@ -413,21 +413,21 @@ T:32:0:99  # Helm
 T:36:0:99  # Soft Armour
 T:40:0:99  # Amulet
 
-N:84:Alchemy
-I:4:4:5
-D:Lets you determine the purpose of all herbs and potions you encounter,
-D: as well as staves and horns.
-T:32:0:99  # Helm
-T:45:0:99  # Ring
+#N:84:Alchemy
+#I:4:4:5
+#D:Lets you determine the purpose of all herbs and potions you encounter,
+#D: as well as staves and horns.
+#T:32:0:99  # Helm
+#T:45:0:99  # Ring
 
 N:85:Bane
-I:4:5:6
+I:4:4:6
 D:You receive a bonus to all skill rolls against
 D: a selected category of enemy. The bonus increases as
 D: you kill more.
 
 N:86:Forewarned
-I:4:6:7
+I:4:5:7
 D:If your base Perception exceeds your Evasion, you gain a
 D: bonus to your Evasion of one third your Perception score.
 D: You can also determine when an item is cursed.
@@ -436,14 +436,14 @@ T:39:0:99  # Light Source
 T:40:0:99  # Amulet
 
 N:87:Listen
-I:4:7:8
+I:4:6:8
 P:4/2
 D:Gives you a chance each turn to detect enemies that you
 D: cannot see (including around corners and through doors).
 T:32:0:99  # Helm
 
 N:88:Master Hunter
-I:4:8:9
+I:4:7:9
 P:4/3:4/5
 D:Gives you an attack bonus of +1 for each time you have killed
 D: an opponent of the same type (up to a maximum of Perception/4).
@@ -452,14 +452,14 @@ T:30:0:99  # Boots
 T:19:0:99  # Bows
 
 N:89:Grace
-I:4:9:10
+I:4:8:10
 D:You gain a point of grace.
 
 # Will ---------------------------------------------
 
 N:100:Channeling
 I:5:0:2
-D:You automatically recognise all staves and horns and can use them twice as efficiently.
+D:You can use all staves and horns twice as efficiently.
 T:32:0:99  # Helm
 T:45:0:99  # Ring
 
@@ -555,14 +555,12 @@ T:31:0:99  # Gloves
 N:122:Jeweller
 I:6:2:4
 D:Allows you to create rings, amulets, horns and light
-D: sources and identify rings, amulets, horns and light
-D: sources you encounter.
+D: sources.
 T:31:0:99  # Gloves
 
 N:123:Enchantment
 I:6:3:5
-D:Allows you to create {special} items and determine
-D: what enchantments exist on items you encounter.
+D:Allows you to create {special} items.
 T:21:8:8   # Hafted (War Hammer only)
 T:31:0:99  # Gloves
 
