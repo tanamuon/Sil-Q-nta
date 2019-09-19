@@ -1408,6 +1408,10 @@ bool set_cut(int v)
  */
 bool set_food(int v)
 {
+	// Disable food clock
+	p_ptr->food = PY_FOOD_ALERT;
+	return FALSE;
+
 	int old_aux, new_aux;
 
 	bool notice = FALSE;
