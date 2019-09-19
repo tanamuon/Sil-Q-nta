@@ -867,6 +867,9 @@ typedef int (*inven_func)(const object_type *);
  */
 static int inven_damage(inven_func typ, int perc, int resistance)
 {
+	// Disable item destruction
+	return 0;
+
 	int i, j, k, amt;
 
 	object_type *o_ptr;
@@ -2021,7 +2024,8 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 		/* Analyze the type */
 		switch (typ)
 		{
-			/* Acid -- Lots of things */
+			/*
+			// Acid -- Lots of things
 			case GF_ACID:
 			{
 				if (hates_acid(o_ptr))
@@ -2033,7 +2037,7 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 				break;
 			}
 
-			/* Elec -- Rings */
+			// Elec -- Rings
 			case GF_ELEC:
 			{
 				if (hates_elec(o_ptr))
@@ -2045,7 +2049,7 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 				break;
 			}
 
-			/* Fire -- Flammable objects */
+			// Fire -- Flammable objects
 			case GF_FIRE:
 			{
 				if (hates_fire(o_ptr))
@@ -2057,7 +2061,7 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 				break;
 			}
 
-			/* Cold -- potions and flasks */
+			// Cold -- potions and flasks
 			case GF_COLD:
 			{
 				if (hates_cold(o_ptr))
@@ -2069,7 +2073,7 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 				break;
 			}
 
-			/* Hack -- break potions and such */
+			// Hack -- break potions and such
 			case GF_SOUND:
 			case GF_EARTHQUAKE:
 			{
@@ -2080,6 +2084,7 @@ static bool project_o(int who, int y, int x, int dd, int ds, int dif, int typ)
 				}
 				break;
 			}
+			*/
 
 			/* Unlock chests */
 			case GF_KILL_TRAP:
