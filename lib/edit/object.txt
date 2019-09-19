@@ -816,13 +816,13 @@ A:16/6
 F:GRA | SUST_GRA | LIGHT
 
 
-N:138:Haunted Dreams
-G:":d
-I:40:6:0
-W:9:0:1:0
-P:0:0d0:0:0d0
-A:9/3
-F:HAUNTED | SEE_INVIS | EASY_KNOW
+#N:138:Haunted Dreams
+#G:":d
+#I:40:6:0
+#W:9:0:1:0
+#P:0:0d0:0:0d0
+#A:9/3
+#F:HAUNTED | SEE_INVIS | EASY_KNOW
 
 
 # (ability 4/2 is Keen Senses)
@@ -928,15 +928,15 @@ A:12/3
 F:FREE_ACT | EASY_KNOW
 
 
-# (ability 2/0 is Dodging)
-N:160:Cowardice
-G:=:d
-I:45:10:0
-W:7:0:1:500
-P:0:0d0:0:0d0
-A:7/8
-F:FEAR | EASY_KNOW | LIGHT_CURSE
-B:2/0
+## (ability 2/0 is Dodging)
+#N:160:Cowardice
+#G:=:d
+#I:45:10:0
+#W:7:0:1:500
+#P:0:0d0:0:0d0
+#A:7/8
+#F:FEAR | EASY_KNOW | LIGHT_CURSE
+#B:2/0
 
 
 #N:161:True Sight
@@ -960,13 +960,13 @@ F:RES_POIS | EASY_KNOW
 ##
 
 
-N:171:Hunger
-G:=:d
-I:45:21:0
-W:6:0:1:0
-P:0:0d0:0:0d0
-A:6/2
-F:HUNGER | EASY_KNOW
+#N:171:Hunger
+#G:=:d
+#I:45:21:0
+#W:6:0:1:0
+#P:0:0d0:0:0d0
+#A:6/2
+#F:HUNGER | EASY_KNOW
 
 
 #N:172:Wrath
@@ -1021,14 +1021,14 @@ A:6/2:14/4
 D:It removes curses from the items in your possession.
 
 
-N:196:Understanding
-G:_:d
-I:55:6:0
-W:10:0:50:400
-P:0:0d0:0:0d0
-A:8/2:14/1
-D:It identifies an item. 
-D: (This may be aborted without using up a charge.) 
+#N:196:Understanding
+#G:_:d
+#I:55:6:0
+#W:10:0:50:400
+#P:0:0d0:0:0d0
+#A:8/2:14/1
+#D:It identifies an item. 
+#D: (This may be aborted without using up a charge.) 
 
 
 N:197:Revelations
@@ -1076,13 +1076,13 @@ A:9/3
 D:It causes fear in all monsters in line of sight.
 
 
-N:202:Self Knowledge
-G:_:d
-I:55:12:0
-W:7:0:50:400
-P:0:0d0:0:0d0
-A:2/3
-D:It lets you know all of your abilities.
+#N:202:Self Knowledge
+#G:_:d
+#I:55:12:0
+#W:7:0:50:400
+#P:0:0d0:0:0d0
+#A:2/3
+#D:It lets you know all of your abilities.
 
 
 N:203:Warding
@@ -1114,13 +1114,13 @@ A:11/4
 D:It allows you to partially recharge another staff.
 
 
-N:210:Summoning
-G:_:d
-I:55:17:0
-W:7:0:50:0
-P:0:0d0:0:0d0
-A:3/3
-D:It summons monsters to the stairs on the current level. 
+#N:210:Summoning
+#G:_:d
+#I:55:17:0
+#W:7:0:50:0
+#P:0:0d0:0:0d0
+#A:3/3
+#D:It summons monsters to the stairs on the current level. 
 
 
 N:211:Shadows
@@ -1343,64 +1343,64 @@ D: restoring grace in the process.
 ##
 
 
-N:343:Slowness
-G:!:d
-I:75:22:100
-W:2:0:5:0
-P:0:0d0:0:0d0
-A:2/3
-F:EASY_KNOW
-D:It slows you down (-1 to speed) for 10d4 turns.
+#N:343:Slowness
+#G:!:d
+#I:75:22:100
+#W:2:0:5:0
+#P:0:0d0:0:0d0
+#A:2/3
+#F:EASY_KNOW
+#D:It slows you down (-1 to speed) for 10d4 turns.
 
 
-N:344:Poison
-G:!:d
-I:75:23:100
-W:3:0:5:0
-P:0:0d0:0:0d0
-A:3/3
-F:EASY_KNOW
-D:It causes 5d4 points of poison. 
+#N:344:Poison
+#G:!:d
+#I:75:23:100
+#W:3:0:5:0
+#P:0:0d0:0:0d0
+#A:3/3
+#F:EASY_KNOW
+#D:It causes 5d4 points of poison. 
 
 
-N:345:Blindness
-G:!:d
-I:75:24:100
-W:4:0:5:0
-P:0:0d0:0:0d0
-A:4/3
-F:EASY_KNOW
-D:It induces blindness for 10d4 turns.
+#N:345:Blindness
+#G:!:d
+#I:75:24:100
+#W:4:0:5:0
+#P:0:0d0:0:0d0
+#A:4/3
+#F:EASY_KNOW
+#D:It induces blindness for 10d4 turns.
 
 
-N:346:Confusion
-G:!:d
-I:75:25:100
-W:6:0:5:0
-P:0:0d0:0:0d0
-A:6/3
-F:EASY_KNOW
-D:It induces confusion for 5d4 turns.
+#N:346:Confusion
+#G:!:d
+#I:75:25:100
+#W:6:0:5:0
+#P:0:0d0:0:0d0
+#A:6/3
+#F:EASY_KNOW
+#D:It induces confusion for 5d4 turns.
 
 
-N:348:Awkwardness
-G:!:d
-I:75:27:100
-W:9:0:5:0
-P:0:0d0:0:0d0
-A:9/3
-F:EASY_KNOW
-D:It reduces your dexterity by one point. 
+#N:348:Awkwardness
+#G:!:d
+#I:75:27:100
+#W:9:0:5:0
+#P:0:0d0:0:0d0
+#A:9/3
+#F:EASY_KNOW
+#D:It reduces your dexterity by one point. 
 
 
-N:350:Disconnection
-G:!:d
-I:75:29:100
-W:11:0:5:0
-P:0:0d0:0:0d0
-A:11/3
-F:EASY_KNOW
-D:It reduces your grace by one point. 
+#N:350:Disconnection
+#G:!:d
+#I:75:29:100
+#W:11:0:5:0
+#P:0:0d0:0:0d0
+#A:11/3
+#F:EASY_KNOW
+#D:It reduces your grace by one point. 
 
 
 ##### Chests #####
@@ -1534,14 +1534,14 @@ D: Herbs provide nourishment for about 250 turns under normal
 D: conditions. 
 
 
-N:385:Emptiness
-G:,:d
-I:80:5:0
-W:4:0:1:0
-P:0:0d0:0:0d0
-A:4/3
-F:EASY_KNOW
-D:It makes you more hungry (by 1,000 turns under normal conditions). 
+#N:385:Emptiness
+#G:,:d
+#I:80:5:0
+#W:4:0:1:0
+#P:0:0d0:0:0d0
+#A:4/3
+#F:EASY_KNOW
+#D:It makes you more hungry (by 1,000 turns under normal conditions). 
 
 
 N:386:Visions
@@ -1557,40 +1557,40 @@ D: Herbs provide nourishment for about 250
 D: turns under normal conditions.
 
 
-N:387:Entrancement
-G:,:d
-I:80:7:250
-W:8:0:1:0
-P:0:0d0:0:0d0
-A:8/3
-F:EASY_KNOW
-D:It induces a trance that lasts for 10d4 turns.
-D: Herbs provide nourishment for about 250 turns under
-D: normal conditions. 
+#N:387:Entrancement
+#G:,:d
+#I:80:7:250
+#W:8:0:1:0
+#P:0:0d0:0:0d0
+#A:8/3
+#F:EASY_KNOW
+#D:It induces a trance that lasts for 10d4 turns.
+#D: Herbs provide nourishment for about 250 turns under
+#D: normal conditions. 
 
 
-N:388:Weakness
-G:,:d
-I:80:8:250
-W:8:0:1:0
-P:0:0d0:0:0d0
-A:8/3
-F:EASY_KNOW
-D:It reduces your strength by one point.
-D: Herbs provide nourishment for about 250
-D: turns under normal conditions. 
+#N:388:Weakness
+#G:,:d
+#I:80:8:250
+#W:8:0:1:0
+#P:0:0d0:0:0d0
+#A:8/3
+#F:EASY_KNOW
+#D:It reduces your strength by one point.
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions. 
 
 
-N:389:Sickness
-G:,:d
-I:80:9:250
-W:8:0:1:0
-P:0:0d0:0:0d0
-A:8/3
-F:EASY_KNOW
-D:It reduces your constitution by one point.
-D: Herbs provide nourishment for
-D: about 250 turns under normal conditions. 
+#N:389:Sickness
+#G:,:d
+#I:80:9:250
+#W:8:0:1:0
+#P:0:0d0:0:0d0
+#A:8/3
+#F:EASY_KNOW
+#D:It reduces your constitution by one point.
+#D: Herbs provide nourishment for
+#D: about 250 turns under normal conditions. 
 
 
 N:399:& Piece~ of Dark Bread

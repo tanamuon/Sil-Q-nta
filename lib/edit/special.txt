@@ -132,12 +132,12 @@ F:IGNORE_ALL
 ###
 
 
-N:9:of Blight
-W:0:6:0:0
-C:0:0:0:0:0:0:0
-T:36:0:99
-T:37:0:99
-F:VUL_POIS
+#N:9:of Blight
+#W:0:6:0:0
+#C:0:0:0:0:0:0:0
+#T:36:0:99
+#T:37:0:99
+#F:VUL_POIS
 
 
 
@@ -474,11 +474,11 @@ F:SLOW_DIGEST
 
 ###
 
-N:86:of Winter's Chill
-W:0:3:0:0
-C:0:0:0:0:0:0:0
-T:35:0:99
-F:VUL_COLD
+#N:86:of Winter's Chill
+#W:0:3:0:0
+#C:0:0:0:0:0:0:0
+#T:35:0:99
+#F:VUL_COLD
 
 
 ##### Bows #####
