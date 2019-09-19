@@ -411,6 +411,9 @@ static bool describe_ignores(const object_type *o_ptr, u32b f3)
 	/* Unused parameter */
 	(void)o_ptr;
 
+	// Don't describe what is now default behaviour
+	return (FALSE);
+
 	/* Collect the ignores */
 //	if ((f3 & (TR3_IGNORE_ACID)) && hates_acid(o_ptr)) list[n++] = "acid";
 //	if ((f3 & (TR3_IGNORE_ELEC)) && hates_elec(o_ptr)) list[n++] = "electricity";

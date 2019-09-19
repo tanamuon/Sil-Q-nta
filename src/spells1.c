@@ -962,6 +962,9 @@ static int inven_damage(inven_func typ, int perc, int resistance)
  */
 static int damage_armour(void)
 {
+	// Disable armour degradation
+	return (FALSE);
+
 	object_type *o_ptr = NULL;
 
 	u32b f1, f2, f3;
