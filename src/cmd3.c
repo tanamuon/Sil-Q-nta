@@ -328,17 +328,19 @@ void do_cmd_wield(object_type *default_o_ptr, int default_item)
 	// remember how many there were
 	original_quantity = o_ptr->number;
 	
+	/*
 	// Check whether it would be too heavy
 	if ((item < 0) && (p_ptr->total_weight + o_ptr->weight > weight_limit()*3/2))
 	{
-		/* Describe it */
+		// Describe it
 		object_desc(o_name, sizeof(o_name), o_ptr, TRUE, 3);
 		
 		if (o_ptr->k_idx) msg_format("You cannot lift %s.", o_name);
 		
-		/* Abort */
+		// Abort
 		return;
 	}
+	*/
 	
 	
 	/* Check the slot */

@@ -2752,14 +2752,16 @@ void py_pickup(void)
 			continue;
 		}
 		
+		/*
 		// Check whether it would be too heavy
 		if (p_ptr->total_weight + o_ptr->weight > weight_limit()*3/2)
 		{
 			if (o_ptr->k_idx) msg_format("You cannot lift %s.", o_name);
 			
-			/* Check the next object */
+			// Check the next object
 			continue;
 		}
+		*/
 
         // store the action type
 		p_ptr->previous_action[0] = ACTION_MISC;
@@ -4419,13 +4421,14 @@ void move_player(int dir)
 	/* Normal movement */
 	else
 	{
+		/*
 		// deal with overburdened characters
 		if (p_ptr->total_weight > weight_limit()*3/2)
 		{
-			/* Abort */
+			// Abort
 			msg_print("You are too burdened to move.");
 
-			/* Disturb the player */
+			// Disturb the player
 			disturb(0, 0);
 			
 			// don't take a turn...
@@ -4433,6 +4436,7 @@ void move_player(int dir)
 			
 			return;
 		}
+		*/
 		
 		/* Check before walking on known traps/chasms on movement */
 		if ((!p_ptr->confused) && (cave_info[y][x] & (CAVE_MARK)))

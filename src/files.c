@@ -1279,7 +1279,8 @@ void display_player_xtra_info(int mode)
 	comma_number(buf, p_ptr->exp);
 	Term_putstr(col+10, 9, -1, TERM_L_GREEN, format("%8s", buf));
 
-	/* Burden (in pounds) */
+	/*
+	// Burden (in pounds)
 	Term_putstr(col, 10, -1, TERM_WHITE, "Burden");
 	strnfmt(buf, sizeof(buf), "%3d.%1d",
 	        p_ptr->total_weight / 10L,
@@ -1289,12 +1290,13 @@ void display_player_xtra_info(int mode)
 	else
 		Term_putstr(col+13, 10, -1, TERM_YELLOW, buf);
 		
-	/* Max Burden (in pounds) */
+	// Max Burden (in pounds)
 	Term_putstr(col, 11, -1, TERM_WHITE, "Max Burden");
 	strnfmt(buf, sizeof(buf), "%3d.%1d",
 	        weight_limit() / 10L,
 	        weight_limit() % 10L);
 	Term_putstr(col+13, 11, -1, TERM_L_GREEN, buf);
+	*/
 
 	if (turn > 0)
 	{

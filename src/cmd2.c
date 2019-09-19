@@ -1665,14 +1665,16 @@ void do_cmd_exchange(void)
 	y = p_ptr->py + ddy[dir];
 	x = p_ptr->px + ddx[dir];
 
+	/*
 	// deal with overburdened characters
 	if (p_ptr->total_weight > weight_limit()*3/2)
 	{
-		/* Abort */
+		// Abort
 		msg_print("You are too burdened to move.");
 		
 		return;
 	}
+	*/
 	
 	// Can't exchange from within pits
 	if (cave_pit_bold(p_ptr->py,p_ptr->px))

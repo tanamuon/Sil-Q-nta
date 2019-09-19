@@ -2529,7 +2529,7 @@ static void calc_bonuses(void)
 	i = weight_limit();
 
 	/* Apply "encumbrance" from weight */
-	if (j > i) p_ptr->pspeed -= 1;
+	// if (j > i) p_ptr->pspeed -= 1;
 
 	/* Stealth slows the player down (unless they are passing) */
 	if (p_ptr->stealth_mode)
