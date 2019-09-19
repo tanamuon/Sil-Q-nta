@@ -5093,6 +5093,25 @@ void combine_pack(void)
 			/* Skip empty items */
 			if (!j_ptr->k_idx) continue;
 
+			// Merge staves of the same type
+			if ((o_ptr->tval == TV_STAFF && j_ptr->tval == TV_STAFF && o_ptr->sval == j_ptr->sval)) {
+				flag = TRUE;
+				j_ptr->pval += o_ptr->pval;
+				p_ptr->window |= (PW_INVEN);
+				p_ptr->inven_cnt--;
+				for (k = i; k < INVEN_PACK; k++)
+				{
+					/* Hack -- slide object */
+					COPY(&inventory[k], &inventory[k+1], object_type);
+				}
+		
+				/* Hack -- wipe hole */
+				object_wipe(&inventory[k]);
+		
+				/* Done */
+				break;
+			}
+
 			/* Can we drop "o_ptr" onto "j_ptr"? */
 			if (object_similar(j_ptr, o_ptr))
 			{
