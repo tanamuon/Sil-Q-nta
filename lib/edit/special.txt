@@ -217,7 +217,8 @@ C:0:0:0:0:0:0:0
 T:22:1:4
 T:22:12:99
 T:23:1:99
-F:VAMPIRIC | HUNGER | LIGHT_CURSE
+F:VAMPIRIC | LIGHT_CURSE
+#F:HUNGER
 
 
 ## T:22:2:4
@@ -466,11 +467,11 @@ C:0:0:0:0:0:0:0
 T:35:0:99
 F:RES_COLD
 
-N:84:of the Traveller
-W:0:1:0:1000
-C:0:0:0:0:0:0:0
-T:35:0:99
-F:SLOW_DIGEST
+#N:84:of the Traveller
+#W:0:1:0:1000
+#C:0:0:0:0:0:0:0
+#T:35:0:99
+#F:SLOW_DIGEST
 
 ###
 

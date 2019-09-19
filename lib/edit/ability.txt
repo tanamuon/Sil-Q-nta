@@ -493,7 +493,7 @@ T:36:0:99  # Soft Armour
 N:104:Indomitable
 I:5:4:5
 D:Gives you resistance to fear, confusion, stunning, and hallucination.
-D: Slows hunger to one third the normal rate.
+#D: Slows hunger to one third the normal rate.
 T:40:0:99  # Amulet
 T:32:0:99  # Helm
 T:37:0:99  # Mail

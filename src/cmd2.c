@@ -820,7 +820,8 @@ static bool generate_poor_quality_object(object_type *o_ptr)
 {
 	bool search_failed = FALSE;
 
-	int object_roll = dieroll(5);
+	//int object_roll = dieroll(5);
+	int object_roll = dieroll(4);
 
 	if (object_roll == 1)
 	{
@@ -835,10 +836,12 @@ static bool generate_poor_quality_object(object_type *o_ptr)
 	{
 		object_prep(o_ptr, lookup_kind(TV_CLOAK, SV_CLOAK));
 	}
+	/*
 	else if (object_roll == 4)
 	{
 		object_prep(o_ptr, lookup_kind(TV_FOOD, SV_FOOD_MEAT));
 	}
+	*/
 	else
 	{
 		search_failed = !make_object(o_ptr, FALSE, FALSE, DROP_TYPE_DAMAGED);

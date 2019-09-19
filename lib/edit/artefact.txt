@@ -208,7 +208,6 @@ D: Above all else, she is famed for her insight.
 ## The Amulet of Tinfang Gelion
 ## 1st age namesake
 ## (ability 7/13 is Woven Themes)
-
 N:3:of Tinfang Gelion
 I:40:10:2
 W:12:20:1:5000
@@ -451,7 +450,7 @@ I:36:11:3
 W:15:1:70:45000
 P:0:0d0:-1:1d8
 F:SMITHING | RES_POIS
-F:HUNGER
+#F:HUNGER
 F:INSTA_ART
 D:Supple but harder than serpent-scale, this shining black
 D: armour was wrought years ago by the master smith Eol,
@@ -720,7 +719,8 @@ N:56:'Agarlhang'
 I:23:7:-2
 W:8:10:60:30000
 P:-1:2d5:1:0d0
-F:VAMPIRIC | LIGHT_CURSE | WILL | PERCEPTION | NEG_CON | HUNGER
+F:VAMPIRIC | LIGHT_CURSE | WILL | PERCEPTION | NEG_CON
+#F:HUNGER
 D:A blood-red blade, slick to the touch. Gripping its haft dulls the
 D: wielder's senses and causes strange hungers to waken in them.
 

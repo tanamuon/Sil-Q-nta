@@ -803,7 +803,8 @@ W:14:0:1:20000
 P:0:0d0:0:0d0
 A:6/3
 F:SUST_CON
-F:SUST_GRA | SLOW_DIGEST | IGNORE_ALL
+F:SUST_GRA | IGNORE_ALL
+#F:SLOW_DIGEST
 F:EASY_KNOW
 
 
@@ -1482,19 +1483,19 @@ F:EASY_KNOW
 D:It sends you into a dark rage
 D: (+1 Str/Con, -1 Dex/Gra, special melee attack, resistance to fear)
 D: for 10d4 turns.
-D: Herbs provide nourishment for about 250
-D: turns under normal conditions. 
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions. 
 
 
-N:381:Sustenance
-G:,:d
-I:80:1:0
-W:5:0:1:50
-P:0:0d0:0:0d0
-A:3/2:13/1
-F:EASY_KNOW
-D:It provides nourishment for about 2000 turns
-D: under normal conditions. 
+#N:381:Sustenance
+#G:,:d
+#I:80:1:0
+#W:5:0:1:50
+#P:0:0d0:0:0d0
+#A:3/2:13/1
+#F:EASY_KNOW
+#D:It provides nourishment for about 2000 turns
+#D: under normal conditions. 
 
 
 N:382:Terror
@@ -1506,8 +1507,8 @@ A:3/2:6/2
 F:EASY_KNOW
 D:It induces fear that lasts
 D: for 10d4 turns and a burst of speed that lasts 5d4 turns.
-D: Herbs provide nourishment for about 250
-D: turns under normal conditions.
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions.
 
 
 N:383:Healing
@@ -1518,8 +1519,8 @@ P:0:0d0:0:0d0
 A:7/2:17/2
 F:EASY_KNOW
 D:It cures all cuts and heals half of your health.
-D:  Herbs provide nourishment for
-D: about 250 turns under normal conditions. 
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions.
 
 
 N:384:Restoration
@@ -1530,8 +1531,8 @@ P:0:0d0:0:0d0
 A:5/4:9/2:19/2
 F:EASY_KNOW
 D:It restores all of your statistics by up to 3 points each. 
-D: Herbs provide nourishment for about 250 turns under normal
-D: conditions. 
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions.
 
 
 #N:385:Emptiness
@@ -1553,8 +1554,8 @@ A:8/3
 F:EASY_KNOW
 D:It causes you to hallucinate for 80d4 turns, but cures blindness in
 D: the process.
-D: Herbs provide nourishment for about 250
-D: turns under normal conditions.
+#D: Herbs provide nourishment for about 250
+#D: turns under normal conditions.
 
 
 #N:387:Entrancement
@@ -1593,35 +1594,35 @@ D: turns under normal conditions.
 #D: about 250 turns under normal conditions. 
 
 
-N:399:& Piece~ of Dark Bread
-G:,:s
-I:80:35:1500
-W:7:0:5:2
-P:0:0d0:0:0d0
-A:7/2:13/1
-F:EASY_KNOW
-D:It provides nourishment for about 1,500 turns under normal conditions. 
+#N:399:& Piece~ of Dark Bread
+#G:,:s
+#I:80:35:1500
+#W:7:0:5:2
+#P:0:0d0:0:0d0
+#A:7/2:13/1
+#F:EASY_KNOW
+#D:It provides nourishment for about 1,500 turns under normal conditions. 
 
 
-N:400:& Strip~ of Dried Meat
-G:,:u
-I:80:36:2000
-W:10:0:10:3
-P:0:0d0:0:0d0
-A:10/4:16/1
-F:EASY_KNOW
-D:It provides nourishment for about 2,000 turns under normal conditions. 
+#N:400:& Strip~ of Dried Meat
+#G:,:u
+#I:80:36:2000
+#W:10:0:10:3
+#P:0:0d0:0:0d0
+#A:10/4:16/1
+#F:EASY_KNOW
+#D:It provides nourishment for about 2,000 turns under normal conditions. 
 
 
-N:401:& Fragment~ of Lembas
-G:,:y
-I:80:37:3000
-W:7:0:1:10
-P:0:0d0:0:0d0
-A:7/4:18/2
-F:EASY_KNOW
-D:It restores a point of grace if it has been drained.  It provides
-D: nourishment for about 3,000 turns under normal conditions. 
+#N:401:& Fragment~ of Lembas
+#G:,:y
+#I:80:37:3000
+#W:7:0:1:10
+#P:0:0d0:0:0d0
+#A:7/4:18/2
+#F:EASY_KNOW
+#D:It restores a point of grace if it has been drained.  It provides
+#D: nourishment for about 3,000 turns under normal conditions. 
 
 
 ##### Various #####
