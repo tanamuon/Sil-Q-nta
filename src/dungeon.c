@@ -2263,6 +2263,24 @@ static void process_player(void)
 		take_hit(amount, "a fatal wound");
 	}
 
+	/* Reduce the wrath counter */
+	if (p_ptr->unused2)
+	{
+		amount = (p_ptr->unused2 / 100) * (p_ptr->unused2 / 100);
+		
+		// half as fast if still singing the song
+		if (singing(SNG_SLAYING))
+		{
+			p_ptr->unused2 -= MAX(amount/4, 1);
+		}
+		else
+		{
+			p_ptr->unused2 -= MAX(amount/2, 1);
+		}
+		p_ptr->update |= (PU_BONUS);
+		p_ptr->redraw |= (PR_SONG);
+	}
+
 	/*** Check the Food, and Regenerate ***/
 
 	/* Basic digestion rate */

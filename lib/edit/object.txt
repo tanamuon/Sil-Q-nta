@@ -2108,11 +2108,11 @@ P:0:0d0:0:0d0
 F:EASY_KNOW
 D:Some characters learn to sing songs of power, which can
 D: have great effect upon you, your enemies, or even your environment.
-D: Your character knows two songs: the Song of Staunching, which stops
-D: you from bleeding and increases the speed at which you heal, and
-D: the Song of the Trees, which increases your light radius. Behind this
-D: door you will find use for both of them. Press (s) to begin or end
-D: singing.
+D: Your character knows two songs: the Song of Silence, which quietens
+D: sounds in the dungeon, making enemies less likely to notice you, and
+D: the Song of the Sharpness, which helps edged weapons penetrate armour.
+D: Behind this door you will find use for both of them. Press (s) to begin
+D: or end singing.
 
 
 N:484:& Note~

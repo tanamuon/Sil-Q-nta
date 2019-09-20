@@ -1089,7 +1089,7 @@ struct player_type
 	byte unused6;
 	byte unused7;
 
-	s32b unused2; // Room for expansion without breaking savefiles
+	s32b unused2; /* The counter for the song of slaying */
 	s32b unused3; // Room for expansion without breaking savefiles
 	s32b unused4; // Room for expansion without breaking savefiles
 };

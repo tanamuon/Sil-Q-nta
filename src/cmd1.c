@@ -4012,6 +4012,12 @@ void py_attack_aux(int y, int x, int attack_type)
 					}
 				}
 
+				// gain wrath if singing song of slaying
+				if (singing(SNG_SLAYING))
+				{
+					add_wrath();
+				}
+
 				// deal with 'follow_through' ability
 				possible_follow_through(y, x, attack_type);
 				

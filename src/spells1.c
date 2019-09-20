@@ -4253,6 +4253,24 @@ bool project(int who, int rad, int y0, int x0, int y1, int x1, int dd, int ds, i
 	return (notice);
 }
 
+void add_wrath(void)
+{
+	int new_wrath = 200;
+
+	if (new_wrath < p_ptr->unused2)
+		new_wrath = 20000 / p_ptr->unused2;
+
+	p_ptr->update |= (PU_BONUS);
+	p_ptr->redraw |= (PR_SONG);
+
+	p_ptr->unused2 += new_wrath;
+}
+
+int slaying_song_bonus(void)
+{
+	return (((ability_bonus(S_SNG, SNG_SLAYING) + 3) * p_ptr->unused2 + 999) / 1000);
+}
+
 /*
  *  Do the effects of Song of Freedom
  */
@@ -4857,6 +4875,22 @@ void change_song(int song)
 			}
 			break;
 		}
+		case SNG_SLAYING:
+		{
+			if (song_to_change == 1)
+			{
+				msg_print("You begin a song of fury and dread.");
+			}
+			else if (old_song == SNG_NOTHING)
+			{
+				msg_print("You add a minor theme of fury and dread.");
+			}
+			else
+			{
+				msg_print("You change your minor theme to one of fury and dread.");
+			}
+			break;
+		}
 		case SNG_CHALLENGE:
 		{
 			if (song_to_change == 1)
@@ -5338,6 +5372,11 @@ void sing(void)
 
 				sing_song_of_elbereth(score);
 
+				break;
+			}
+			case SNG_SLAYING:
+			{
+				if ((p_ptr->song_duration % 3) == type - 1) cost += 1;
 				break;
 			}
 			case SNG_CHALLENGE:

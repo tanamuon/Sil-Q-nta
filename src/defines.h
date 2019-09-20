@@ -546,19 +546,20 @@
  * Songs 
  */
 #define	SNG_ELBERETH				 	0
-#define	SNG_CHALLENGE					1
-#define	SNG_DELVINGS					2
-#define	SNG_FREEDOM					3
-#define	SNG_SILENCE					4
-#define	SNG_STAUNCHING					5
-#define	SNG_WHETTING					6
-#define	SNG_TREES					7
-#define	SNG_THRESHOLDS					8
-#define	SNG_STAYING					9
-#define	SNG_LORIEN					10
-#define	SNG_MASTERY					11
-#define	SNG_WOVEN_THEMES				12
-#define	SNG_GRA						13
+#define	SNG_SLAYING					1
+#define	SNG_CHALLENGE					2
+#define	SNG_DELVINGS					3
+#define	SNG_FREEDOM					4
+#define	SNG_SILENCE					5
+#define	SNG_STAUNCHING					6
+#define	SNG_WHETTING					7
+#define	SNG_TREES					8
+#define	SNG_THRESHOLDS					9
+#define	SNG_STAYING					10
+#define	SNG_LORIEN					11
+#define	SNG_MASTERY					12
+#define	SNG_WOVEN_THEMES				13
+#define	SNG_GRA						14
 
 #define	SNG_BINDING					50 /* monster songs */
 #define	SNG_PIERCING				51 /* monster songs */
