@@ -3020,6 +3020,12 @@ void update_lore(void)
 		if ((cave_info[o_ptr->iy][o_ptr->ix] & (CAVE_SEEN)) || 
 		    ((p_ptr->py == o_ptr->iy) && (p_ptr->px == o_ptr->ix)))
 		{
+			// Automatically ID all seen items
+			if (!object_known_p(o_ptr))
+			{
+				ident(o_ptr);
+			}
+
 			update_lore_aux(o_ptr);
 		}
 	}
