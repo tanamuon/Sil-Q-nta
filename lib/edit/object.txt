@@ -1013,13 +1013,13 @@ D: if you are currently in one.  This stuns
 D: any light-sensitive creatures within the area of effect.
 
 
-N:195:Sanctity
-G:_:d
-I:55:5:0
-W:6:0:50:400
-P:0:0d0:0:0d0
-A:6/2:14/4
-D:It removes curses from the items in your possession.
+#N:195:Sanctity
+#G:_:d
+#I:55:5:0
+#W:6:0:50:400
+#P:0:0d0:0:0d0
+#A:6/2:14/4
+#D:It removes curses from the items in your possession.
 
 
 #N:196:Understanding

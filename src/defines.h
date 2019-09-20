@@ -520,15 +520,15 @@
  */
 #define	WIL_CHANNELING				0
 #define	WIL_STRENGTH_IN_ADVERSITY		1
-#define	WIL_CURSE_BREAKING			2
-#define	WIL_INNER_LIGHT				3
-#define	WIL_INDOMITABLE				4
-#define	WIL_HARDINESS				5
-#define	WIL_POISON_RESISTANCE			6
-#define	WIL_VENGEANCE				7
-#define	WIL_CRITICAL_RESISTANCE			8
-#define	WIL_MAJESTY				9
-#define	WIL_CON					10
+#define	WIL_CURSE_BREAKING			10
+#define	WIL_INNER_LIGHT				2
+#define	WIL_INDOMITABLE				3
+#define	WIL_HARDINESS				4
+#define	WIL_POISON_RESISTANCE			5
+#define	WIL_VENGEANCE				6
+#define	WIL_CRITICAL_RESISTANCE			7
+#define	WIL_MAJESTY				8
+#define	WIL_CON					9
 
 /* 
  * Smithing abilities 
