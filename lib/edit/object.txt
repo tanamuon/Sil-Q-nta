@@ -998,7 +998,7 @@ I:55:2:0
 W:9:0:50:400
 P:0:0d0:0:0d0
 A:9/3
-D:It reveals doors and traps in line of sight and may
+D:It reveals doors, pits, and webs in line of sight and may
 D: open or destroy them.
 
 

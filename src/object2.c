@@ -3938,6 +3938,9 @@ void place_object(int y, int x, bool good, bool great, int droptype)
  */
 void place_trap(int y, int x)
 {
+	// Don't place trap
+	return;
+	
 	int feat;
 
 	/* Paranoia */

@@ -263,8 +263,8 @@ T:32:0:99  # Helm
 
 N:44:Leaping
 I:2:4:6
-D:You can leap over a chasm or trap if you moved
-D: towards it the previous turn. (Roosts and webs are not leapable).
+D:You can leap over a chasm or pit if you moved
+D: towards it the previous turn. (Webs are not leapable).
 T:30:0:99  # Boots
 T:21:3:3   # Quarterstaves
 
@@ -629,7 +629,7 @@ T:20:0:99  # Shovels and Mattocks
 
 N:144:Song of Freedom
 I:7:4:2
-D:Discovers and overcomes nearby doors, traps, and rubble.
+D:Discovers and overcomes nearby doors, webs, pits, and rubble.
 T:40:0:99  # Amulet
 T:35:0:99  # Cloak
 
