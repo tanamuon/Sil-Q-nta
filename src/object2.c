@@ -1543,6 +1543,22 @@ void object_prep(object_type *o_ptr, int k_idx)
 			o_ptr->weight = k_ptr->weight;
 	}
 	
+	// Round N.5 lb weapons down to N lb
+	switch (o_ptr->tval)
+	{
+		case TV_BOW:
+		case TV_DIGGING:
+		case TV_HAFTED:
+		case TV_POLEARM:
+		case TV_SWORD:
+		{
+			if (o_ptr->weight % 2 != 0 && o_ptr->weight > 10)
+			{
+				o_ptr->weight -= 5;
+			}
+		}
+	}
+	
 	/* Default bonuses to attack and defence */
 	o_ptr->att = k_ptr->att;
 	o_ptr->dd = k_ptr->dd;
@@ -2581,7 +2597,7 @@ void apply_magic(object_type *o_ptr, int lev, bool okay, bool good, bool great, 
 			if ((k_info[o_ptr->k_idx].flags3 & (TR3_THROWING)) && !artefact_p(o_ptr))
 			{
 				// throwing items always have typical weight to help with stacking
-				o_ptr->weight = k_info[o_ptr->k_idx].weight;
+				// o_ptr->weight = k_info[o_ptr->k_idx].weight; // keep throwing weapons in 1 lb increments
 				
 				// and often come in multiples
 				if (one_in_(2))
