@@ -2140,7 +2140,8 @@ void drop_loot(monster_type *m_ptr)
 			/* Prepare the item */
 			object_prep(i_ptr, k_idx);
 			
-			i_ptr->timeout = rand_range(500,3000);
+			//i_ptr->timeout = rand_range(500,3000);
+			i_ptr->timeout = 2000;
 		}
 		
 		/* Assume seen XXX XXX XXX */

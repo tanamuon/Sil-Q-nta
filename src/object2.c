@@ -2254,6 +2254,7 @@ static void a_m_aux_4(object_type *o_ptr, int level, bool fine, bool special)
 			/* Hack -- Torches -- random fuel */
 			if (o_ptr->sval == SV_LIGHT_TORCH)
 			{
+				/*
 				if (one_in_(3))
 				{
 					o_ptr->timeout = rand_range(500, 2000);
@@ -2262,11 +2263,14 @@ static void a_m_aux_4(object_type *o_ptr, int level, bool fine, bool special)
 				{
 					o_ptr->timeout = 2000;
 				}
+				*/
+				o_ptr->timeout = 2000;
 			}
 
 			/* Hack -- Lanterns -- random fuel */
 			else if (o_ptr->sval == SV_LIGHT_LANTERN)
 			{
+				/*
 				if (one_in_(3))
 				{
 					o_ptr->timeout = rand_range(500, 3000);
@@ -2275,6 +2279,8 @@ static void a_m_aux_4(object_type *o_ptr, int level, bool fine, bool special)
 				{
 					o_ptr->timeout = 3000;
 				}
+				*/
+				o_ptr->timeout = 3000;
 			}
 
 			break;

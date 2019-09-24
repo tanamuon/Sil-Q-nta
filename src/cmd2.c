@@ -830,7 +830,8 @@ static bool generate_poor_quality_object(object_type *o_ptr)
 	else if (object_roll == 2)
 	{
 		object_prep(o_ptr, lookup_kind(TV_LIGHT, SV_LIGHT_TORCH));
-		o_ptr->timeout = rand_range(400, 800);
+		//o_ptr->timeout = rand_range(400, 800);
+		o_ptr->timeout = 2000;
 	}
 	else if (object_roll == 3)
 	{
