@@ -1660,7 +1660,7 @@ static const smithing_flag_desc smithing_flag_types[] =
 	{ CAT_SKILL,	TR1_SNG,			1,	"Song"			},
 	{ CAT_MISC,		TR1_DAMAGE_SIDES,	1,	"Damage bonus"			},
 	{ CAT_MISC,		TR2_LIGHT,			2,	"Light"					},
-	{ CAT_MISC,		TR2_SLOW_DIGEST,	2,	"Sustenance"			},
+//	{ CAT_MISC,		TR2_SLOW_DIGEST,	2,	"Sustenance"			},
 	{ CAT_MISC,		TR2_REGEN,			2,	"Regeneration"			},
 	{ CAT_MISC,		TR2_SEE_INVIS,		2,	"See Invisible"			},
 	{ CAT_MISC,		TR2_FREE_ACT,		2,	"Free Action"			},
@@ -1696,7 +1696,7 @@ static const smithing_flag_desc smithing_flag_types[] =
 	{ CAT_RES,		TR2_RES_HALLU,		2,	"Resist Hallucination"	},
 	{ CAT_CURSE,	TR2_DANGER,			2,	"Danger"				},
 	{ CAT_CURSE,	TR2_FEAR,			2,	"Terror"				},
-	{ CAT_CURSE,	TR2_HUNGER,			2,	"Hunger"				},
+//	{ CAT_CURSE,	TR2_HUNGER,			2,	"Hunger"				},
 	{ CAT_CURSE,	TR2_DARKNESS,		2,	"Darkness"				},
 	{ CAT_CURSE,	TR2_AGGRAVATE,		2,	"Wrath"				    },
 	{ CAT_CURSE,	TR2_HAUNTED,		2,	"Haunted"			    },
@@ -1704,7 +1704,7 @@ static const smithing_flag_desc smithing_flag_types[] =
 	{ CAT_CURSE,	TR2_VUL_COLD,		2,	"Cold Vulnerability"	},
 	{ CAT_CURSE,	TR2_VUL_FIRE,		2,	"Fire Vulnerability"	},
 	{ CAT_CURSE,	TR2_VUL_POIS,		2,	"Poison Vulnerability"	},
-	{ CAT_CURSE,	TR3_LIGHT_CURSE,	3,	"Cursed"				},
+//	{ CAT_CURSE,	TR3_LIGHT_CURSE,	3,	"Cursed"				},
 	{ 0,			0,					0,	""						}
 };
 
