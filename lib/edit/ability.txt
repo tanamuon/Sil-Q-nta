@@ -629,7 +629,9 @@ T:20:0:99  # Shovels and Mattocks
 
 N:144:Song of Freedom
 I:7:4:2
-D:Discovers and overcomes nearby doors, webs, pits, and rubble.
+D:Discovers and overcomes nearby doors, webs, pits, and rubble and
+D: gives you protection from entrancement and slowing and makes
+D: existing effects of these types wear off very quickly.
 T:40:0:99  # Amulet
 T:35:0:99  # Cloak
 
