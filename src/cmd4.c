@@ -2779,11 +2779,21 @@ int object_difficulty(object_type *o_ptr)
 	if (f2 & TR2_RES_FEAR)		{	dif_inc += 2;	}
 	if (f2 & TR2_RES_HALLU)		{	dif_inc += 2;	}
 
+	bool smt_ability = FALSE;
+	// Abilities
+	for (i = 0; i < o_ptr->abilities; i++)
+	{
+		int level = (&b_info[ability_index(o_ptr->skilltype[i],o_ptr->abilitynum[i])])->level;
+		if (level > 0 && b_info[ability_index(o_ptr->skilltype[i],o_ptr->abilitynum[i])].skilltype == 6) smt_ability = TRUE;
+		dif_inc += 4 + (level / 3);
+		smithing_cost.exp += 50 * level;
+	}
+
 	// Penalty Flags
-	if (f2 & TR2_DANGER)		{	dif_dec += 5;	} // only Danger counts
+	if (f2 & TR2_DANGER)		{	dif_dec += 5;	} // only Danger always counts
 
 	// Count the other curses only for known items which aren't smithing gear...
-	if (!o_ptr->name1)
+	if (!(f1 & TR1_GRA) && !(f1 & TR1_SMT) && !smt_ability)
 	{
 		if (f2 & TR2_DARKNESS)		{	dif_dec += 3;	}
 		if (f2 & TR2_AGGRAVATE)		{	dif_dec += 3;	}
@@ -2793,15 +2803,6 @@ int object_difficulty(object_type *o_ptr)
 		if (f2 & TR2_VUL_POIS)		{	dif_dec += 4;	}
 		if (f3 & TR3_LIGHT_CURSE)	{	dif_dec += 2;	}
 
-	}
-
-	// Abilities
-	for (i = 0; i < o_ptr->abilities; i++)
-	{
-		int level = (&b_info[ability_index(o_ptr->skilltype[i],o_ptr->abilitynum[i])])->level;
-
-		dif_inc += 4 + (level / 3);
-		smithing_cost.exp += 50 * level;
 	}
 
 	// Penalty for being an artefact
