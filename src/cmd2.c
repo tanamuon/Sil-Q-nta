@@ -2964,7 +2964,7 @@ void do_cmd_alter(void)
 	}
 	
 	// deal with players who can't see the square
-	else if ((dir != 5) && !(cave_info[y][x] & (CAVE_MARK)))
+	else if ((dir != 5) && !(cave_info[y][x] & (CAVE_MARK) || cave_info[y][x] & (CAVE_SEEN)))
 	{
 		if (cave_floor_bold(y,x))
 		{
