@@ -3698,7 +3698,7 @@ int numbers_menu_aux(int *highlight)
 		move_displayed_highlight(old_highlight, attr[old_highlight], *highlight, COL_SMT2);
 		
 		if (valid[*highlight-1])	return (*highlight);
-		else						bell("Invalid choice.");
+		//else						bell("Invalid choice.");
 	}
 	
 	/* Choose current  */
