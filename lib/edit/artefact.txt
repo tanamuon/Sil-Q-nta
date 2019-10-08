@@ -571,13 +571,13 @@ D: emblem of a white hand dripping blood.
 
 ## The Round shield of Glorfindel
 ## 1st age namesake
-## (ability 0/4 is Charge)
+## (ability 0/5 is Charge)
 
 N:43:of Glorfindel
 I:34:3:0
 W:8:20:60:25000
 P:0:0d0:1:1d4
-B:0/4
+B:0/5
 D:The shield of Glorfindel, a hero of Gondolin.
 D: He was ever at the front of battle, leading
 D: elves to take swift vengeance upon their foes.
@@ -1082,13 +1082,13 @@ D: did rive the rocks of Rodrim's hall.'
 ## The Glaive of the Sirion
 ## 1st age namesake
 ## (ability 3/4 is Opportunist)
-## (ability 0/9 is Zone of Control)
+## (ability 0/10 is Zone of Control)
 
 N:100:of the Sirion
 I:22:4:3
 W:10:20:70:50000
 P:0:2d10:1:0d0
-B:0/9:3/4
+B:0/10:3/4
 D:Like the waters of its namesake river, this fine blade
 D: is ever in motion. In combat, it seems to flow into
 D: every opening, no matter how brief.
@@ -1504,14 +1504,14 @@ D: who would one day forge the rings of power.
 
 
 ## The Set of Gloves of Rumil
-## (ability 0/7 is Subtlety)
+## (ability 0/8 is Subtlety)
 
 N:163:of Rumil
 I:31:1:1
 W:8:25:5:36000
 P:0:0d0:0:1d0
 F:GRA
-B:0/7
+B:0/8
 D:A supple pair of leather gloves.
 D: They lend you subtlety of hand and mind.
 
