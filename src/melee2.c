@@ -859,6 +859,20 @@ int cave_passable_mon(monster_type *m_ptr, int y, int x, bool *bash)
 
 
 /*
+ *  Check if monster can steal items
+ */
+bool is_item_eater(monster_race *r_ptr)
+{
+        int b = 0;
+        for (int b; b<MONSTER_BLOW_MAX; b++) 
+        {
+        	if (r_ptr->blow[b].effect == RBE_EAT_ITEM) return (TRUE);
+        }
+        return (FALSE);
+}
+
+
+/*
  *  Determine the next move for an unwary wandering monster
  */
 static bool get_move_wander(monster_type *m_ptr, int *ty, int *tx)
@@ -1075,7 +1089,7 @@ static bool get_move_wander(monster_type *m_ptr, int *ty, int *tx)
 	else
 	{
 		// smart monsters who are at the stairs they are aiming for leave the level
-		if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (p_ptr->depth != MORGOTH_DEPTH) &&
+		if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (p_ptr->depth != MORGOTH_DEPTH) && !is_item_eater(r_ptr) &&
 		     cave_stair_bold(m_ptr->fy, m_ptr->fx) && (m_ptr->wandering_dist == 0))
 		{
 			char m_name[80];
@@ -1290,7 +1304,8 @@ static bool find_safety(monster_type *m_ptr, int *ty, int *tx)
 						
 						// check whether it is a stair and the monster can use these
 						stair = cave_stair_bold(yy - conv_y, xx - conv_x) &&
-                                (r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL));
+                                (r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL) &&
+                                !is_item_eater(r_ptr));
 
 						/* Character can't see this grid, or it is a stair... */
 						if (!player_can_see_bold(yy - conv_y, xx - conv_x) || stair)
@@ -1444,7 +1459,7 @@ static bool get_move_retreat(monster_type *m_ptr, int *ty, int *tx)
 	}
 	
 	// intelligent monsters that are fleeing can try to use stairs
-	if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (m_ptr->stance == STANCE_FLEEING))
+	if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (m_ptr->stance == STANCE_FLEEING) && !is_item_eater(r_ptr))
 	{
 		if (cave_stair_bold(m_ptr->fy, m_ptr->fx))
 		{
@@ -4962,7 +4977,7 @@ static void process_monster(monster_type *m_ptr)
 	if ((ty == m_ptr->fy) && (tx == m_ptr->fx))
 	{
 		// intelligent monsters that are fleeing can try to use stairs (but not territorial ones)
-		if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (m_ptr->stance == STANCE_FLEEING))
+		if ((r_ptr->flags2 & (RF2_SMART)) && !(r_ptr->flags2 & (RF2_TERRITORIAL)) && (m_ptr->stance == STANCE_FLEEING) && !is_item_eater(r_ptr))
 		{
 			if (cave_stair_bold(m_ptr->fy, m_ptr->fx))
 			{
